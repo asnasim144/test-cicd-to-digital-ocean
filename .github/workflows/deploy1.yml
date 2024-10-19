@@ -27,5 +27,5 @@ jobs:
             # Pull the latest code from GitHub
             git pull
             docker build -t test .
-            docker run -p 4444:4444 test
+            docker run -d -p 4444:4444 test
 
