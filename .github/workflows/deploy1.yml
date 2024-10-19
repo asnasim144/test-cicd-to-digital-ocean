@@ -26,5 +26,6 @@ jobs:
 
             # Pull the latest code from GitHub
             git pull
-            npm install 
-            node server
+            docker build -t test .
+            docker run -p 4444:4444 test
+
